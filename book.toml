@@ -6,4 +6,4 @@ src = "src"
 title = "Logbook"
 
 [output.html]
-default-theme = "Ayu"
+default-theme = "rust"
