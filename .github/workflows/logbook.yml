@@ -1,4 +1,4 @@
-name: logbook pages
+name: logbook CI/CD
 
 on:
   push:
@@ -21,6 +21,7 @@ jobs:
           mdbook-version: 'latest'
 
       - run: mdbook build
+      - run: mdbook test
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
