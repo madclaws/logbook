@@ -182,6 +182,24 @@
 <p>Captain's log, Stardate <strong>2122.275.5</strong></p>
 </blockquote>
 <h1 id="notes-on-cicd-for-mdbook"><a class="header" href="#notes-on-cicd-for-mdbook">Notes on CI/CD for mdbook</a></h1>
+<h2 id="setting-up-gh-pages-and-build-test-github-action"><a class="header" href="#setting-up-gh-pages-and-build-test-github-action">Setting up gh-pages and build-test github action</a></h2>
+<p>Easy deployment of mdbook to gh-pages.</p>
+<ul>
+<li>Setup gh-pages for the repo
+<ul>
+<li>Create a branch <code>gh-pages</code></li>
+<li>settings (repo) -&gt; Pages -&gt; set source as branch <code>gh-pages</code> and location <code>root</code></li>
+</ul>
+</li>
+<li><a href="https://github.com/peaceiris/actions-mdbook#getting-started">Follow this reference</a>.</li>
+<li>Remeber to create a <code>TOKEN</code> for the repo, under Settings(repo) -&gt; Secrets
+<ul>
+<li>Add any unqiue id and give a labels, ex <code>REPO_TOKEN</code></li>
+</ul>
+</li>
+<li>Make changes regarding the branch name, token name in the yml file, if required.</li>
+</ul>
+<p>Finally a reference of the <a href="https://github.com/madclaws/madclaws.github.io/blob/master/.github/workflows/logbook.yml">logbooks's CI/CD workflow</a></p>
 
                     </main>
 
