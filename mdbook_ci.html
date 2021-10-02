@@ -3,8 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Logbook</title>
-                <meta name="robots" content="noindex" />
+        <title>CI/CD for mdbook - Logbook</title>
                 
 
         <!-- Custom HTML head -->
@@ -83,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="prologue.html">Prologue</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="linux_reference.html"><strong aria-hidden="true">1.</strong> Linux commands reference</a></li><li class="chapter-item expanded "><a href="mdbook_ci.html"><strong aria-hidden="true">2.</strong> CI/CD for mdbook</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="prologue.html">Prologue</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="linux_reference.html"><strong aria-hidden="true">1.</strong> Linux commands reference</a></li><li class="chapter-item expanded "><a href="mdbook_ci.html" class="active"><strong aria-hidden="true">2.</strong> CI/CD for mdbook</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -144,41 +143,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="prologue"><a class="header" href="#prologue">Prologue</a></h1>
-<p><strong>Stupidity: the final frontier.</strong></p>
-<p>These are the voyages of a Logbook. Its continuing mission: to explore strange stuff. To seek out uncool stuff. To boldly go where everybody has gone before! - The Captain</p>
-<img src="assets/treklogo.png" alt="trek_logo" width="300" style="margin-left: auto; margin-right: auto; width: 50%; display: block"/><div style="break-before: page; page-break-before: always;"></div><blockquote>
-<p>Captain's log, Stardate <strong>2122.261.13</strong></p>
-</blockquote>
-<h1 id="linux-commands-reference"><a class="header" href="#linux-commands-reference">Linux commands reference</a></h1>
-<ol>
-<li>
-<p><strong>List all open ports</strong></p>
-<p><code>sudo lsof -i -P -n | grep LISTEN</code></p>
-</li>
-<li>
-<p><strong>Info about the process running on a port</strong></p>
-<p><code>lsof -i :&lt;PORT&gt;</code></p>
-</li>
-<li>
-<p><strong>Location of the running process</strong></p>
-<p><code>lsof -p &lt;PID&gt; | grep cwd</code></p>
-</li>
-<li>
-<p><strong>Killing a process</strong></p>
-<p><code>kill &lt;PID&gt;</code></p>
-</li>
-<li>
-<p><strong>Copying a folder</strong></p>
-<p><code>cp -avr /tmp/conf/ /tmp/backup/</code></p>
-</li>
-<li>
-<p><strong>Removing files older than X days</strong></p>
-<p><code>find &lt;path&gt;/*.log -mtime +X -exec rm {} \; </code></p>
-</li>
-</ol>
-<hr />
-<div style="break-before: page; page-break-before: always;"></div><blockquote>
+                        <blockquote>
 <p>Captain's log, Stardate <strong>2122.275.5</strong></p>
 </blockquote>
 <h1 id="notes-on-cicd-for-mdbook"><a class="header" href="#notes-on-cicd-for-mdbook">Notes on CI/CD for mdbook</a></h1>
@@ -187,6 +152,9 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="linux_reference.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
                         
                         
                         <div style="clear: both"></div>
@@ -195,6 +163,9 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="linux_reference.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
                 
                             </nav>
 
@@ -218,11 +189,6 @@
 
         <!-- Custom JS scripts -->
         
-                        <script type="text/javascript">
-        window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
-        });
-        </script>
-                
+        
     </body>
 </html>
