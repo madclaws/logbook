@@ -5,3 +5,4 @@
 ---------------
 
 - [Linux commands reference](./linux_reference.md)
+- [CI/CD for mdbook](./mdbook_ci.md)
