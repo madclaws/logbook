@@ -9,8 +9,7 @@ Easy deployment of mdbook to gh-pages.
     - Create a branch `gh-pages`
     - settings (repo) -> Pages -> set source as branch `gh-pages` and location `root`
 - [Follow this reference](https://github.com/peaceiris/actions-mdbook#getting-started).
-- Remeber to create a `TOKEN` for the repo, under Settings(repo) -> Secrets
-    - Add any unqiue id and give a labels, ex `REPO_TOKEN`
-- Make changes regarding the branch name, token name in the yml file, if required.
+- Don't need to modify this line, `github_token: ${{ secrets.GITHUB_TOKEN }}`. A GitHub Actions runner automatically creates a GITHUB_TOKEN secret to authenticate in our workflow
+- Make changes regarding the branch name the yml file, if required.
 
 Finally a reference of the [logbooks's CI/CD workflow](https://github.com/madclaws/madclaws.github.io/blob/master/.github/workflows/logbook.yml)
